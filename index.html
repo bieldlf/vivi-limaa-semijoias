@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Viviane Lima Joias — Catálogo</title>
+<meta name="description" content="Conheça o catálogo de joias Viviane Lima e fale conosco pelo WhatsApp.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Viviane Lima Joias">
+<meta property="og:description" content="Joias para momentos especiais.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#9a754d">
+<style>
+:root{--bg:#fbf8f3;--text:#302a25;--surface:#fffdf9;--accent:#9a754d;--button:#302a25;--soft:#eee5da;--border:#e8dfd5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,serif}button,input,textarea,select{font:inherit}button{cursor:pointer}
+header{padding:20px 6%;background:var(--surface);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:24px;letter-spacing:2px}.logo small{display:block;font:10px Arial;letter-spacing:4px;color:var(--accent);margin-top:4px}
+nav a{margin-left:20px;text-decoration:none;color:#514840;font:13px Arial}.adminBtn{border:1px solid var(--accent);background:transparent;padding:9px 13px;font:11px Arial;margin-left:20px}
+.hero{padding:70px 6%;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;background:linear-gradient(120deg,#f5ece2,#fffdf9)}
+.hero h1{font-size:clamp(44px,6vw,76px);line-height:.95;font-weight:400;margin:15px 0}.eyebrow{font:11px Arial;letter-spacing:4px;color:var(--accent);text-transform:uppercase}.hero p{font:15px/1.7 Arial;color:#685e55;max-width:510px}
+.hero-img,.about-img{min-height:350px;background:#e8ddd1;display:flex;align-items:center;justify-content:center;color:#9b8976;font:11px Arial;text-align:center}.hero-img img,.about-img img{width:100%;height:100%;min-height:350px;object-fit:cover}
+.btn{border:1px solid var(--accent);background:transparent;padding:13px 21px;font:11px Arial;letter-spacing:1px;color:var(--accent);text-decoration:none;display:inline-block;margin-top:18px}
+section{padding:70px 6%}.title{text-align:center;font-size:38px;font-weight:400}.sub{text-align:center;font:13px Arial;color:#786e65;margin:10px 0 35px}
+.tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-bottom:35px}.tabs button{border:1px solid #ddd0c2;background:#fff;padding:10px 16px;font:12px Arial}.tabs button.active{background:var(--button);color:white}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:white;border:1px solid #eee3d8;overflow:hidden;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #302a2514}.photo{aspect-ratio:1;background:#eee6dc}.photo img{width:100%;height:100%;object-fit:cover}.info{padding:17px}.info h3{font-weight:400;font-size:20px;margin:0 0 7px}.info p{font:13px/1.5 Arial;color:#776d64;margin:0}.price{font:15px Arial;font-weight:700;margin-top:10px;color:var(--text)}.availability{display:block;font:10px Arial;letter-spacing:.8px;text-transform:uppercase;margin-top:12px;margin-bottom:6px;color:var(--accent)}.interest{display:block;width:100%;margin-top:8px;border:1px solid var(--accent);background:var(--button);color:#fff;padding:10px 12px;font:11px Arial;letter-spacing:.7px}.empty{text-align:center;padding:45px;border:1px dashed #d7c8b8;font:13px Arial;color:#8a7a6c;grid-column:1/-1}
+.about{background:var(--soft);display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about h2{font-size:40px;font-weight:400;margin:12px 0 20px}.about p{font:15px/1.8 Arial;color:#665c54}.contact{text-align:center;background:#fffdf9}.contact p{font:14px Arial;color:#70665d}footer{text-align:center;padding:24px 18px;background:#302a25;color:#eee;font:11px Arial}.adminFooter{display:inline-block;margin:8px 0 0;border:0;background:transparent;color:#a99d92;font:9px Arial;font-weight:400;opacity:.22;padding:2px 4px;cursor:pointer;letter-spacing:.15px;box-shadow:none}.adminFooter:hover{opacity:.55;background:transparent}
+.modal{display:none;position:fixed;inset:0;background:#0008;z-index:30;padding:25px;overflow:auto}.panel{background:#fffdf9;max-width:900px;margin:auto;padding:28px;border-radius:3px}.panelHead{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e6ddd3;padding-bottom:15px}.panel h2{font-weight:400;margin:0}.close{border:0;background:transparent;font-size:25px}
+.editgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:22px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font:11px Arial;text-transform:uppercase;letter-spacing:1px;color:#76695e}.field input,.field textarea,.field select{border:1px solid #d9cbbb;padding:11px;background:white}.field textarea{min-height:100px;resize:vertical}.save{background:var(--button);color:white;border:0;padding:12px 18px;font:12px Arial;margin-top:18px}
+.admin-list{margin-top:28px;border-top:1px solid #e5dbd0}.admin-item{padding:13px 0;border-bottom:1px solid #e5dbd0;display:flex;justify-content:space-between;gap:10px;align-items:center}.mini-actions button{border:1px solid #d8c9ba;background:white;padding:7px 9px;font:11px Arial;margin-left:5px}
+.photo-input{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.theme-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:15px}
+.theme{border:1px solid #d9cbbb;background:white;padding:12px 8px;text-align:center;font:11px Arial;cursor:pointer}
+.swatch{height:35px;margin-bottom:8px;border-radius:2px}
+.color-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+.color-control{border:1px solid #e1d6cb;padding:10px;background:white;display:flex;align-items:center;gap:10px;font:11px Arial}
+.color-control input{width:42px;height:32px;padding:0;border:0;background:none}
+.photo-input input{flex:1}
+.adminTabs{display:flex;gap:6px;flex-wrap:wrap;margin:22px 0 18px;border-bottom:1px solid #e5dbd0;padding-bottom:8px}.adminTab{border:1px solid #d9cbbb;background:#fff;padding:9px 12px;font:11px Arial}.adminTab.active{background:var(--button);color:#fff}.adminPane{display:none}.adminPane.active{display:block}.adminSection{padding:4px 0 8px}.adminFooter{font-size:8px!important;padding:2px 4px!important;border:0!important;background:transparent!important;color:#a99d92!important;opacity:.22!important;box-shadow:none!important;margin:7px 0 0!important;letter-spacing:.15px!important}.adminFooter:hover{opacity:.55!important;background:transparent!important}.waHint{font:11px Arial;color:#8a7a6c;margin-top:5px;line-height:1.4}
+@media(max-width:750px){nav{display:none}.adminBtn{display:block}.hero,.about{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.editgrid{grid-template-columns:1fr}.field.full{grid-column:auto}section{padding:55px 5%}.hero{padding:50px 5%}}
+@media(max-width:450px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="logo" id="logo">VIVIANE LIMA<small id="logoSub">JOIAS</small></div><nav><a href="#catalogo">Catálogo</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+</header>
+
+<section class="hero"><div><div class="eyebrow" id="heroEyebrow">Elegância • Delicadeza • Estilo</div><h1 id="heroTitle">Joias para<br>momentos especiais.</h1><p id="heroText">Conheça a seleção Viviane Lima: peças escolhidas para trazer brilho e personalidade a cada ocasião.</p><a class="btn" href="#catalogo" id="heroButton">VER CATÁLOGO</a></div><div class="hero-img" id="heroImage">FOTO PRINCIPAL<br>(adicione pelo modo de edição)</div></section>
+
+<section id="destaques" style="display:none"><div class="title">Destaques</div><div class="sub">Peças selecionadas para você</div><div class="grid" id="featuredGrid"></div></section>
+<section id="catalogo"><div class="title" id="catalogTitle">Nosso catálogo</div><div class="sub" id="catalogSub">Peças escolhidas com carinho</div><div class="tabs" id="tabs"></div><div class="grid" id="grid"></div></section>
+
+<section class="about" id="sobre"><div class="about-img" id="aboutImage">FOTO DA LOJA / VIVIANE</div><div><div class="eyebrow" id="aboutEyebrow">Sobre a marca</div><h2 id="aboutTitle">Feito para<br>você brilhar.</h2><p id="aboutText">Conte aqui a história da Viviane Lima e o carinho por trás de cada escolha.</p></div></section>
+
+<section class="contact" id="contato"><div class="eyebrow" id="contactEyebrow">Vamos conversar?</div><div class="title" id="contactTitle">Encontre sua próxima joia.</div><p id="contactText">Entre em contato com a Viviane Lima.</p><div id="storeDetails" style="font:13px/1.8 Arial;color:#70665d;margin-top:15px"></div><a class="btn" id="whatsapp" href="#">WHATSAPP</a> <a class="btn" id="instagram" href="#">INSTAGRAM</a></section>
+<footer id="footer"><span id="footerText">© 2026 Viviane Lima Joias • Catálogo</span><button class="adminFooter" onclick="openLogin()" aria-label="Acesso à área da loja">Acesso da loja</button></footer>
+
+<div class="modal" id="loginModal"><div class="panel" style="max-width:420px">
+<div class="panelHead"><h2>🔐 Acesso à edição</h2><button class="close" onclick="closeLogin()">×</button></div>
+<p style="font:13px Arial;color:#76695e;line-height:1.5">Digite a senha para abrir o Modo Edição.</p>
+<div class="field" style="margin-top:18px"><label>Senha</label><input id="loginPass" type="password" placeholder="Digite sua senha" onkeydown="if(event.key==='Enter')checkLogin()"></div>
+<button class="save" onclick="checkLogin()">ENTRAR</button>
+<p style="font:11px Arial;color:#8a7a6c;margin-top:14px">Acesso reservado à administração.</p>
+</div></div>
+<div class="modal" id="adminModal"><div class="panel">
+<div class="panelHead"><h2>⚙ Modo edição</h2><div><button class="mini-actions button" onclick="logoutAdmin()" style="border:1px solid #d8c9ba;background:white;padding:7px 10px;font:11px Arial">SAIR</button><button class="close" onclick="closeAdmin()">×</button></div></div>
+<p style="font:13px Arial;color:#76695e">Organizei a edição por abas para ficar mais fácil no celular. As alterações ficam salvas neste navegador.</p>
+<div class="adminTabs">
+<button class="adminTab active" onclick="adminTab('conteudo',this)">Conteúdo</button>
+<button class="adminTab" onclick="adminTab('loja',this)">Loja</button>
+<button class="adminTab" onclick="adminTab('pecas',this)">Peças</button>
+<button class="adminTab" onclick="adminTab('aparencia',this)">Aparência</button>
+</div>
+<div id="pane-conteudo" class="adminPane active">
+<div class="adminSection"><h3 style="font-weight:400">✏️ Textos do site</h3><div class="editgrid">
+<div class="field"><label>Título principal</label><input id="eHeroTitle"></div><div class="field"><label>Texto principal</label><input id="eHeroText"></div>
+<div class="field"><label>Título do catálogo</label><input id="eCatalogTitle"></div><div class="field"><label>Subtítulo do catálogo</label><input id="eCatalogSub"></div>
+<div class="field"><label>Título “Sobre”</label><input id="eAboutTitle"></div><div class="field"><label>Texto “Sobre”</label><input id="eAboutText"></div>
+<div class="field"><label>Título do contato</label><input id="eContactTitle"></div><div class="field"><label>Texto do contato</label><input id="eContactText"></div>
+<div class="field"><label>WhatsApp (link)</label><input id="eWhats"></div><div class="field"><label>Instagram (link)</label><input id="eInsta"></div>
+<div class="field full"><label>Rodapé</label><input id="eFooter"></div>
+</div><button class="save" onclick="saveText()">SALVAR TEXTOS</button></div>
+<div class="adminSection"><h3 style="font-weight:400">🖼️ Fotos principais</h3><div class="editgrid"><div class="field"><label>Foto principal</label><input type="file" id="heroFile" accept="image/*" onchange="setSiteImage(this,'heroImage')"></div><div class="field"><label>Foto da seção Sobre</label><input type="file" id="aboutFile" accept="image/*" onchange="setSiteImage(this,'aboutImage')"></div></div></div>
+<div class="adminSection"><h3 style="font-weight:400">🔐 Senha do Modo Edição</h3><div style="display:flex;gap:8px;flex-wrap:wrap"><input id="newPass" type="password" placeholder="Nova senha" style="padding:10px;border:1px solid #d9cbbb"><button class="save" style="margin:0" onclick="changePass()">ALTERAR SENHA</button></div></div>
+</div>
+<div id="pane-loja" class="adminPane">
+<h3 style="font-weight:400">⚙️ Informações da loja</h3><div class="editgrid">
+<div class="field"><label>Nome da loja</label><input id="sName" placeholder="Viviane Lima"></div><div class="field"><label>Complemento do nome</label><input id="sBrandSuffix" placeholder="JOIAS"><div class="waHint">É o texto menor que aparece abaixo do nome da loja. Você pode trocar ou deixar vazio.</div></div><div class="field"><label>Telefone</label><input id="sPhone" placeholder="(31) 99999-9999"></div>
+<div class="field full"><label>WhatsApp — número ou link</label><input id="sWhats" placeholder="https://wa.me/5531999999999"><div class="waHint">Ao preencher, os botões “Tenho interesse” abrirão o WhatsApp com uma mensagem pronta sobre a peça.</div></div>
+<div class="field"><label>Instagram — usuário</label><input id="sInstaUser" placeholder="@vivianelima"></div><div class="field"><label>Instagram — link</label><input id="sInsta" placeholder="https://instagram.com/vivianelima"></div>
+<div class="field full"><label>Endereço</label><input id="sAddress" placeholder="Rua, número, bairro, cidade"></div><div class="field"><label>Horário</label><textarea id="sHours" placeholder="Seg a Sex: 9h às 18h"></textarea></div><div class="field"><label>E-mail</label><input id="sEmail" placeholder="contato@exemplo.com"></div></div>
+<div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:15px;font:12px Arial"><label><input type="checkbox" id="showPhone"> Mostrar telefone</label><label><input type="checkbox" id="showAddress"> Mostrar endereço</label><label><input type="checkbox" id="showHours"> Mostrar horário</label><label><input type="checkbox" id="showEmail"> Mostrar e-mail</label></div><button class="save" onclick="saveStore()">SALVAR INFORMAÇÕES</button>
+<h3 style="font-weight:400;margin-top:35px">Categorias</h3><div style="display:flex;gap:8px;flex-wrap:wrap"><input id="newCat" placeholder="Nome da nova categoria" style="padding:10px;border:1px solid #d9cbbb"><button class="save" style="margin:0" onclick="addCategory()">+ CRIAR CATEGORIA</button></div><div id="catList" class="admin-list"></div>
+</div>
+<div id="pane-pecas" class="adminPane">
+<h3 style="font-weight:400">💎 Adicionar / editar peça</h3><p style="font:13px Arial;color:#76695e">Use “Editar” na lista para alterar uma peça existente.</p><div class="editgrid"><div class="field"><label>Nome da peça</label><input id="pName" placeholder="Ex.: Anel Dourado"></div><div class="field"><label>Categoria</label><select id="pCat"></select></div><div class="field full"><label>Descrição</label><textarea id="pDesc" placeholder="Descrição da peça..."></textarea></div><div class="field"><label>Preço</label><input id="pPrice" placeholder="R$ 249,90"></div><div class="field"><label>Disponibilidade</label><select id="pAvailability"><option>Disponível</option><option>Sob consulta</option><option>Esgotado</option></select></div><div class="field"><label>Destaque</label><select id="pFeatured"><option value="false">Não</option><option value="true">Sim</option></select></div><div class="field full"><label>Foto</label><input type="file" id="pFile" accept="image/*"></div></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="save" id="productSaveBtn" onclick="saveProduct()">+ ADICIONAR PEÇA</button><button class="save" id="productCancelBtn" onclick="cancelProductEdit()" style="display:none;background:#eee5da;color:#302a25">CANCELAR</button></div><h3 style="font-weight:400;margin-top:35px">Peças cadastradas</h3><div id="productList" class="admin-list"></div>
+</div>
+<div id="pane-aparencia" class="adminPane">
+<h3 style="font-weight:400">🎨 Aparência</h3><p style="font:13px Arial;color:#76695e">Escolha um tema ou personalize as cores.</p><div class="theme-grid"><button class="theme" onclick="theme('elegante')"><div class="swatch" style="background:linear-gradient(90deg,#fffdf9 50%,#9a754d 50%)"></div>Elegante</button><button class="theme" onclick="theme('luxo')"><div class="swatch" style="background:linear-gradient(90deg,#171514 50%,#c6a15b 50%)"></div>Luxo</button><button class="theme" onclick="theme('delicado')"><div class="swatch" style="background:linear-gradient(90deg,#fff7f5 50%,#b77f88 50%)"></div>Delicado</button><button class="theme" onclick="theme('classico')"><div class="swatch" style="background:linear-gradient(90deg,#f2eadf 50%,#6f5239 50%)"></div>Clássico</button></div><div class="color-row"><label class="color-control">Fundo <input type="color" id="cBg" onchange="liveColors()"></label><label class="color-control">Texto <input type="color" id="cText" onchange="liveColors()"></label><label class="color-control">Destaques <input type="color" id="cAccent" onchange="liveColors()"></label><label class="color-control">Botões <input type="color" id="cButton" onchange="liveColors()"></label><label class="color-control">Blocos <input type="color" id="cSoft" onchange="liveColors()"></label><label class="color-control">Superfície <input type="color" id="cSurface" onchange="liveColors()"></label></div><button class="save" onclick="saveColors()">SALVAR CORES</button>
+</div>
+</div></div>
+
+<script>
+const defaults={
+ heroTitle:"Joias para<br>momentos especiais.",
+ heroText:"Conheça a seleção Viviane Lima: peças escolhidas para trazer brilho e personalidade a cada ocasião.",
+ catalogTitle:"Nosso catálogo",catalogSub:"Peças escolhidas com carinho",
+ aboutTitle:"Feito para<br>você brilhar.",
+ aboutText:"Conte aqui a história da Viviane Lima e o carinho por trás de cada escolha.",
+ contactTitle:"Encontre sua próxima joia.",
+ contactText:"Entre em contato com a Viviane Lima.",
+ whats:"#",insta:"#",footer:"© 2026 Viviane Lima Joias • Catálogo"
+};
+const base={
+ ...defaults,
+ cats:["Anéis","Colares","Brincos","Pulseiras","Conjuntos","Outros"],
+ products:[],heroImg:"",aboutImg:"",password:"VLj!2026#Brilho",
+ store:{name:"Viviane Lima",brandSuffix:"JOIAS",phone:"",whats:"#",instaUser:"",insta:"#",address:"",hours:"",email:"",showPhone:false,showAddress:false,showHours:false,showEmail:false},
+ colors:{bg:"#fbf8f3",text:"#302a25",accent:"#9a754d",button:"#302a25",soft:"#eee5da",surface:"#fffdf9"}
+};
+let data=JSON.parse(localStorage.getItem("vivianeSite")||"null")||base;
+data.products=(data.products||[]).map(p=>({...p,price:p.price||"",availability:p.availability||"Disponível",featured:!!p.featured}));
+// Senha inicial. Depois de alterada no Modo Edição, ela permanece salva no navegador.
+let active="Todos";let editingProductIndex=-1;
+
+function save(){localStorage.setItem("vivianeSite",JSON.stringify(data))}
+function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+function applyColors(){let c=data.colors||{};let r=document.documentElement;for(let k of ["bg","text","accent","button","soft","surface"])if(c[k])r.style.setProperty("--"+k,c[k])}
+function liveColors(){let map={cBg:"bg",cText:"text",cAccent:"accent",cButton:"button",cSoft:"soft",cSurface:"surface"};for(let id in map)document.documentElement.style.setProperty("--"+map[id],document.getElementById(id).value)}
+function saveColors(){let map={cBg:"bg",cText:"text",cAccent:"accent",cButton:"button",cSoft:"soft",cSurface:"surface"};data.colors=data.colors||{};for(let id in map)data.colors[map[id]]=document.getElementById(id).value;save();applyColors();alert("Cores salvas!")}
+function loadColorControls(){let c=data.colors||{};let map={cBg:"bg",cText:"text",cAccent:"accent",cButton:"button",cSoft:"soft",cSurface:"surface"};for(let id in map)document.getElementById(id).value=c[map[id]]||"#000000"}
+function theme(t){let themes={elegante:{bg:"#fbf8f3",text:"#302a25",accent:"#9a754d",button:"#302a25",soft:"#eee5da",surface:"#fffdf9"},luxo:{bg:"#171514",text:"#f5efe6",accent:"#c6a15b",button:"#c6a15b",soft:"#282321",surface:"#211e1c"},delicado:{bg:"#fff7f5",text:"#49383b",accent:"#b77f88",button:"#8f626b",soft:"#f3e2e4",surface:"#fffdfc"},classico:{bg:"#f2eadf",text:"#3d3027",accent:"#6f5239",button:"#493526",soft:"#e3d3c0",surface:"#fffaf4"}};data.colors=themes[t];applyColors();loadColorControls();save()}
+function adminTab(tab,btn){document.querySelectorAll('.adminTab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.adminPane').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.getElementById('pane-'+tab).classList.add('active')}
+function openLogin(){document.getElementById("loginPass").value="";document.getElementById("loginModal").style.display="block";setTimeout(()=>document.getElementById("loginPass").focus(),100)}
+function closeLogin(){document.getElementById("loginModal").style.display="none"}
+function checkLogin(){if(document.getElementById("loginPass").value===(data.password||"VLj!2026#Brilho")){closeLogin();sessionStorage.setItem("vivianeAdmin","1");openAdmin()}else alert("Senha incorreta.")}
+function logoutAdmin(){sessionStorage.removeItem("vivianeAdmin");closeAdmin();alert("Você saiu do Modo Edição.")}
+function changePass(){let v=document.getElementById("newPass").value.trim();if(v.length<8)return alert("Use uma senha com pelo menos 8 caracteres.");data.password=v;save();document.getElementById("newPass").value="";alert("Senha alterada!")}
+function storeDefaults(){if(!data.store)data.store=base.store;return data.store}
+function renderStore(){
+ let x=storeDefaults();
+ document.getElementById("storeDetails").innerHTML=[x.showPhone&&x.phone?"📞 "+esc(x.phone):"",x.showAddress&&x.address?"📍 "+esc(x.address):"",x.showHours&&x.hours?"🕐 "+esc(x.hours).replace(/\n/g,"<br>"):"",x.showEmail&&x.email?"✉️ "+esc(x.email):""].filter(Boolean).join("<br>");
+ document.getElementById("whatsapp").href=x.whats||"#";document.getElementById("floatingWhats").href=x.whats||"#";
+ document.getElementById("instagram").href=x.insta||"#";document.getElementById("instagram").textContent=x.instaUser?"INSTAGRAM "+x.instaUser:"INSTAGRAM";
+}
+function loadStoreControls(){let x=storeDefaults();for(let [id,v] of Object.entries({sName:x.name,sBrandSuffix:x.brandSuffix||"JOIAS",sPhone:x.phone,sWhats:x.whats==="#"?"":x.whats,sInstaUser:x.instaUser,sInsta:x.insta==="#"?"":x.insta,sAddress:x.address,sHours:x.hours,sEmail:x.email}))document.getElementById(id).value=v;for(let [id,v] of Object.entries({showPhone:x.showPhone,showAddress:x.showAddress,showHours:x.showHours,showEmail:x.showEmail}))document.getElementById(id).checked=!!v}
+function saveStore(){data.store={name:document.getElementById("sName").value.trim()||"Viviane Lima",brandSuffix:document.getElementById("sBrandSuffix").value.trim(),phone:document.getElementById("sPhone").value.trim(),whats:document.getElementById("sWhats").value.trim()||"#",instaUser:document.getElementById("sInstaUser").value.trim(),insta:document.getElementById("sInsta").value.trim()||"#",address:document.getElementById("sAddress").value.trim(),hours:document.getElementById("sHours").value.trim(),email:document.getElementById("sEmail").value.trim(),showPhone:showPhone.checked,showAddress:showAddress.checked,showHours:showHours.checked,showEmail:showEmail.checked};save();renderStore();document.getElementById("logo").firstChild.textContent=data.store.name.toUpperCase();document.getElementById("logoSub").textContent=data.store.brandSuffix||"";document.getElementById("logoSub").textContent=data.store.brandSuffix||"";alert("Configurações salvas!")}
+function setImage(id,src,placeholder){document.getElementById(id).innerHTML=src?`<img src="${src}" alt="">`:placeholder}
+function apply(){
+ for(const [id,key] of Object.entries({heroTitle:"heroTitle",heroText:"heroText",catalogTitle:"catalogTitle",catalogSub:"catalogSub",aboutTitle:"aboutTitle",aboutText:"aboutText",contactTitle:"contactTitle",contactText:"contactText",footerText:"footer"}))document.getElementById(id).innerHTML=data[key];
+ setImage("heroImage",data.heroImg,"FOTO PRINCIPAL<br>(adicione pelo modo de edição)");setImage("aboutImage",data.aboutImg,"FOTO DA LOJA / VIVIANE");
+ renderTabs();renderProducts();renderFeatured();renderStore();
+}
+function renderTabs(){document.getElementById("tabs").innerHTML=`<button class="active" onclick="showCat('Todos',this)">Todos</button>`+data.cats.map(c=>`<button onclick="showCat('${esc(c)}',this)">${esc(c)}</button>`).join("")}
+function showCat(cat,b){active=cat;document.querySelectorAll(".tabs button").forEach(x=>x.classList.remove("active"));b.classList.add("active");renderProducts()}
+function productCard(p){
+ let msg=encodeURIComponent(`Olá, Viviane! Tenho interesse na peça "${p.name}".${p.price?` Preço: ${p.price}.`:""}`);
+ return `<article class="card"><div class="photo"><img src="${p.src}" alt="${esc(p.name)}" loading="lazy"></div><div class="info"><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p>${p.price?`<div class="price">${esc(p.price)}</div>`:""}<div class="availability">${esc(p.availability||"Disponível")}</div><a class="interest" href="#" target="_blank" rel="noopener" data-base="${esc(data.store?.whats||data.whats||"#")}" data-msg="${esc(`Olá, Viviane! Tenho interesse na peça "${p.name}".`)}">TENHO INTERESSE</a></div></article>`
+}
+function renderProducts(){let a=data.products.filter(p=>active==="Todos"||p.cat===active),g=document.getElementById("grid");g.innerHTML=a.length?a.map(productCard).join(""):`<div class="empty">Nenhuma peça cadastrada nesta categoria ainda.</div>`;fixInterestLinks(g)}
+function renderFeatured(){let a=data.products.filter(p=>p.featured);let s=document.getElementById("destaques");s.style.display=a.length?"block":"none";document.getElementById("featuredGrid").innerHTML=a.map(productCard).join("");fixInterestLinks(document.getElementById("featuredGrid"))}
+function fixInterestLinks(root){root.querySelectorAll(".interest").forEach(a=>{let base=(a.dataset.base||"").trim(),msg=a.dataset.msg||"";if(!base||base==="#"){a.href="#";a.onclick=()=>{alert("Cadastre o WhatsApp da loja no Modo Edição > Loja.");return false}}else{if(!base.startsWith("http")){let digits=base.replace(/\D/g,"");if(digits.length>=10)base="https://wa.me/"+digits}a.href=base+(base.includes("?")?"&":"?")+"text="+encodeURIComponent(msg);a.onclick=null}})}
+function openAdmin(){document.getElementById("adminModal").style.display="block";for(const [id,key] of Object.entries({eHeroTitle:"heroTitle",eHeroText:"heroText",eCatalogTitle:"catalogTitle",eCatalogSub:"catalogSub",eAboutTitle:"aboutTitle",eAboutText:"aboutText",eContactTitle:"contactTitle",eContactText:"contactText",eWhats:"whats",eInsta:"insta",eFooter:"footer"}))document.getElementById(id).value=(data[key]||"").replace(/<br>/g,"\n");renderAdmin();loadColorControls();loadStoreControls()}
+function closeAdmin(){document.getElementById("adminModal").style.display="none"}
+function saveText(){for(const [id,key] of Object.entries({eHeroTitle:"heroTitle",eHeroText:"heroText",eCatalogTitle:"catalogTitle",eCatalogSub:"catalogSub",eAboutTitle:"aboutTitle",eAboutText:"aboutText",eContactTitle:"contactTitle",eContactText:"contactText",eWhats:"whats",eInsta:"insta",eFooter:"footer"}))data[key]=document.getElementById(id).value.replace(/\n/g,"<br>");save();apply();alert("Alterações salvas!")}
+function setSiteImage(input,id){let r=new FileReader();r.onload=()=>{if(id==="heroImage")data.heroImg=r.result;else data.aboutImg=r.result;save();apply()};if(input.files[0])r.readAsDataURL(input.files[0])}
+function addCategory(){let v=document.getElementById("newCat").value.trim();if(v&&!data.cats.includes(v)){data.cats.push(v);save();document.getElementById("newCat").value="";renderAdmin();apply()}}
+function deleteCat(i){if(data.cats.length<=1)return alert("Mantenha pelo menos uma categoria.");let old=data.cats[i];data.cats.splice(i,1);data.products.forEach(p=>{if(p.cat===old)p.cat=data.cats.includes("Outros")?"Outros":data.cats[0]});save();renderAdmin();apply()}
+function clearProductForm(){
+ editingProductIndex=-1;
+ ["pName","pDesc","pPrice","pFile"].forEach(id=>document.getElementById(id).value="");
+ document.getElementById("pAvailability").value="Disponível";document.getElementById("pFeatured").value="false";
+ document.getElementById("productSaveBtn").textContent="+ ADICIONAR PEÇA AO CATÁLOGO";document.getElementById("productCancelBtn").style.display="none";
+}
+function editProduct(i){
+ let p=data.products[i];editingProductIndex=i;
+ document.getElementById("pName").value=p.name||"";document.getElementById("pDesc").value=p.desc||"";document.getElementById("pCat").value=p.cat||data.cats[0];document.getElementById("pPrice").value=p.price||"";document.getElementById("pAvailability").value=p.availability||"Disponível";document.getElementById("pFeatured").value=p.featured?"true":"false";document.getElementById("pFile").value="";
+ document.getElementById("productSaveBtn").textContent="SALVAR ALTERAÇÕES DA PEÇA";document.getElementById("productCancelBtn").style.display="inline-block";document.getElementById("pName").scrollIntoView({behavior:"smooth",block:"center"});document.getElementById("pName").focus();
+}
+function cancelProductEdit(){clearProductForm()}
+function saveProduct(){
+ let f=document.getElementById("pFile").files[0],name=document.getElementById("pName").value.trim(),desc=document.getElementById("pDesc").value.trim(),cat=document.getElementById("pCat").value;
+ if(!name)return alert("Coloque o nome da peça.");
+ let finish=(src)=>{
+  let obj={name,desc,cat,src:src||"",price:document.getElementById("pPrice").value.trim(),availability:document.getElementById("pAvailability").value,featured:document.getElementById("pFeatured").value==="true"};
+  if(editingProductIndex<0){if(!src)return alert("Escolha uma foto para a peça.");data.products.push(obj);alert("Peça adicionada!");}
+  else{let old=data.products[editingProductIndex];if(!src)obj.src=old.src;data.products[editingProductIndex]=obj;alert("Peça atualizada!");}
+  save();clearProductForm();renderAdmin();apply();
+ };
+ if(f){let r=new FileReader();r.onload=()=>finish(r.result);r.readAsDataURL(f)}else finish(null);
+}
+function deleteProduct(i){data.products.splice(i,1);save();renderAdmin();apply()}
+function renderAdmin(){
+ document.getElementById("pCat").innerHTML=data.cats.map(c=>`<option>${esc(c)}</option>`).join("");
+ document.getElementById("catList").innerHTML=data.cats.map((c,i)=>`<div class="admin-item"><span>${esc(c)}</span><span class="mini-actions"><button onclick="deleteCat(${i})">Excluir</button></span></div>`).join("");
+ document.getElementById("productList").innerHTML=data.products.length?data.products.map((p,i)=>`<div class="admin-item"><span><b>${esc(p.name)}</b><br><small style="font:11px Arial;color:#76695e">${esc(p.cat)} ${p.price?"• "+esc(p.price):""}</small></span><span class="mini-actions"><button onclick="editProduct(${i})">Editar</button><button onclick="deleteProduct(${i})">Excluir</button></span></div>`).join(""):`<div style="font:13px Arial;color:#8a7a6c;padding:15px 0">Nenhuma peça cadastrada.</div>`
+}
+applyColors();apply();storeDefaults();document.getElementById("logo").firstChild.textContent=data.store.name.toUpperCase();document.getElementById("logoSub").textContent=data.store.brandSuffix||"";
+</script>
+<a id="floatingWhats" href="#" aria-label="Falar no WhatsApp" style="position:fixed;right:20px;bottom:20px;z-index:20;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;text-decoration:none;font:700 24px Arial;box-shadow:0 8px 24px #0003">✆</a>
+</body></html>
