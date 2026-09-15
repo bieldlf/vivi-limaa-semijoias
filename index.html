@@ -117,6 +117,7 @@ const base={
  colors:{bg:"#fbf8f3",text:"#302a25",accent:"#9a754d",button:"#302a25",soft:"#eee5da",surface:"#fffdf9"}
 };
 let data=JSON.parse(localStorage.getItem("vivianeSite")||"null")||base;
+ data.colors={bg:"#fff7f5",text:"#49383b",accent:"#b77f88",button:"#8f626b",soft:"#f3e2e4",surface:"#fffdfc"};
 data.products=(data.products||[]).map(p=>({...p,price:p.price||"",availability:p.availability||"Disponível",featured:!!p.featured}));
 // Senha inicial. Depois de alterada no Modo Edição, ela permanece salva no navegador.
 let active="Todos";let editingProductIndex=-1;
